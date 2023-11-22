@@ -34,6 +34,7 @@ public class lesson6_2 {
             } else {
                 System.out.println((int) result);
                 System.out.println();
+                System.out.println();
             }
         }
     }
