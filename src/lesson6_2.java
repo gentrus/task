@@ -33,6 +33,7 @@ public class lesson6_2 {
                 System.out.println("Результат выражения слишком большой!");
             } else {
                 System.out.println((int) result);
+                System.out.println();
             }
         }
     }
