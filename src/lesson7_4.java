@@ -12,13 +12,15 @@ public class lesson7_4 {
 
         System.out.println(kor(a));
     }
-    static double kor (int a) {
-
-        if (a==1) {
-            return 1;
-        }
-
-        return Math.sqrt(a+Math.sqrt(kor(a-1)));
+    static double kor(int number) {
+        return kor(1, number);
     }
 
+    static double kor(int number, int maxNumber) {
+        if (number == maxNumber) {
+            return Math.sqrt(number);
+        }
+
+        return Math.sqrt(number + kor(number + 1, maxNumber));
+    }
 }
